@@ -3,35 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./assets/styles/index.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
-
-  Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-
+  <header>
+    <div>
+      <img src="./assets/images/logo.svg" alt="logo">
+    </div>
+    <div id="score">
+      <span>Score</span>
+      <span id="playerScore">00</span>
+    </div>
+  </header>
   
-  <div class="attribution">
+  <main>
+    <div id="selection">
+      <span class="border rock"><img src="./assets/images/icon-rock.svg" class="icon rock" alt="Rock"></span>
+      <span class="border paper"><img src="./assets/images/icon-paper.svg" class="icon paper" alt="Paper"></span>
+      <span class="border scissors"><img src="./assets/images/icon-scissors.svg" class="icon scissors" alt="Scissors"></span>
+    </div>
+    <div id="selected">
+      <div>
+        <span class="heading">You Picked</span>
+        <span id="player" class="border paper">
+          <img src="./assets/images/icon-paper.svg" class="icon" alt="Player Choice">
+        </span>
+      </div>
+      <div id="winLose">
+        <div id="win">You Win</div>
+        <div id="lose">You Lose</div>
+        <button id="againBtn">Play Again</button>
+      </div>
+      <div>
+        <span class="heading">House Picked</span>
+        <span id="house" class="border scissors">
+          <img src="./assets/images/icon-scissors.svg" class="icon" alt="House choice">
+        </span>
+      </div>
+    </div>
+  </main>
+
+  <nav>
+    <button id="rulesBtn">Rules</button>
+  </nav>
+
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Jonathan</a>.
+  </footer>
+
+  <!-- Scripts -->
+  <script href="./assets/scripts/index.js"></script>
 </body>
 </html>

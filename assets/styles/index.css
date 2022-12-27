@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    /* Primary */
+    --scissors-gradient: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    --paper-gradient: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    --rock-gradient: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+    --lizard-gradient: linear-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+    --cyan-gradient: linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+
+    /* Neutral */
+    --dark-text: hsl(229, 25%, 31%);
+    --score-text: hsl(229, 64%, 46%);
+    --header-outline: hsl(217, 16%, 45%);
+
+    /* Background */
+    --radial-gradient-background: linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: var(--radial-gradient-background);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+body {
+    color: white;
+    font-family: "Barlow Semi Condensed";
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.border {
+    display: block;
+    border-radius: 100%;
+    padding: 20px;
+    height: 180px;
+    width: 180px;
+    cursor: pointer;
+}
+
+.icon {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 100%;
+}
+
+.border.rock {
+    background: var(--rock-gradient);
+}
+
+.border.paper {
+    background: var(--paper-gradient);
+}
+
+.border.scissors {
+    background: var(--scissors-gradient);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 20px auto;
+    border: 2px solid var(--header-outline);
+    border-radius: 10px;
+}
+
+#score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid var(--header-outline);
+    color: var(--score-text);
+    padding: 15px 40px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+#playerScore {
+    color: var(--dark-text);
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing:normal;
+}
+
+#selection {
+    display: grid;
+    max-width: 500px;
+    margin: 30px auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    grid-template-areas: 
+        "paper scissors"
+        "rock rock";
+    background-image: url(../images/bg-triangle.svg);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+#selection .rock {
+    grid-area: rock;
+    justify-self: center;
+}
+
+#selection .paper {
+    grid-area: paper;
+    justify-self: center;
+}
+
+#selection .scissors {
+    grid-area: scissors;
+    justify-self: center;
+}
+
+#selected {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 30px 10px;
+}
+
+#selected .heading {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 20px auto 30px;
+}
+
+#winLose {
+    margin-top: 60px;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#win, #lose {
+    margin: 0 auto;
+}
+
+#win {
+    display: none;
+}
+
+button {
+    margin: 0 auto;
+    padding: 10px 35px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed";
+}
+
+#againBtn {
+    background-color: white;
+    color: hsl(349, 71%, 52%);
+}
+
+#rulesBtn {
+    display: block;
+    float: right;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+
+
+.attribution { clear: both; margin-bottom: 30px; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
