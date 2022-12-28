@@ -173,12 +173,13 @@ header {
 }
 
 #againBtn {
-    background-color: white;
-    color: var(--dark-text);
+    background-color: rgb(255, 255, 255);
+    color: hsl(349, 71%, 52%);
 }
 
 #againBtn:hover {
-    color: hsl(349, 81%, 54%);
+    color: white;
+    background-color: transparent;
 }
 
 #rulesBtn {
@@ -200,8 +201,8 @@ header {
     top: 70px;
     left: calc(50% - 184px);
     padding: 80px 30px 20px 30px;
-    background-color: whitesmoke;
-    border: 2px solid var(--header-outline);
+    background-color: white;
+    border: 1px solid var(--header-outline);
 }
 
 #rules a {
