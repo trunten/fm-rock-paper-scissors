@@ -14,7 +14,7 @@
     </div>
     <div id="score">
       <span>Score</span>
-      <span id="playerScore">00</span>
+      <span id="playerScore">0</span>
     </div>
   </header>
   
@@ -24,7 +24,7 @@
       <span class="border paper"><img src="./assets/images/icon-paper.svg" class="icon paper" alt="Paper"></span>
       <span class="border scissors"><img src="./assets/images/icon-scissors.svg" class="icon scissors" alt="Scissors"></span>
     </div>
-    <div id="selected">
+    <div id="selected" class="hide">
       <div>
         <span class="heading">You Picked</span>
         <span id="player" class="border paper">
@@ -32,8 +32,9 @@
         </span>
       </div>
       <div id="winLose">
-        <div id="win">You Win</div>
-        <div id="lose">You Lose</div>
+        <div id="win" class="hide">You Win</div>
+        <div id="lose" class="hide">You Lose</div>
+        <div id="draw" class="hide">Draw</div>
         <button id="againBtn">Play Again</button>
       </div>
       <div>
@@ -43,11 +44,12 @@
         </span>
       </div>
     </div>
+    <a href="#rules" id="rulesBtn">Rules</a>
+    <div id="rules" class="hide">
+      <img src="./assets/images/image-rules.svg" alt="rules">
+      <a href="#" id="closeBtn">X</a>
+    </div>
   </main>
-
-  <nav>
-    <button id="rulesBtn">Rules</button>
-  </nav>
 
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
@@ -55,6 +57,6 @@
   </footer>
 
   <!-- Scripts -->
-  <script href="./assets/scripts/index.js"></script>
+  <script src="./assets/scripts/index.js"></script>
 </body>
 </html>

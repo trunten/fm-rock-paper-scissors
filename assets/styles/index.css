@@ -37,6 +37,10 @@ body {
     margin: 0 auto;
 }
 
+.hide {
+    display: none !important;
+}
+
 .border {
     display: block;
     border-radius: 100%;
@@ -157,11 +161,7 @@ header {
     margin: 0 auto;
 }
 
-#win {
-    display: none;
-}
-
-button {
+#againBtn, #rulesBtn {
     margin: 0 auto;
     padding: 10px 35px;
     border-radius: 10px;
@@ -172,6 +172,7 @@ button {
     cursor: pointer;
     font-size: 13px;
     font-family: "Barlow Semi Condensed";
+    text-decoration: none;
 }
 
 #againBtn {
@@ -186,6 +187,33 @@ button {
     color: white;
     margin-bottom: 50px;
     margin-top: 20px;
+}
+
+#rules {
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 230px);
+    padding: 80px 80px 30px 80px;
+    background-color: whitesmoke;
+    border: 2px solid var(--header-outline);
+}
+
+#rules a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: var(--dark-text);
+    position: relative;
+    top: -340px;
+    left: 330px;
+    width: 35px;
+}
+
+#rules:target {
+    display: block !important;
 }
 
 
