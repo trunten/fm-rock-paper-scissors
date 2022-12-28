@@ -101,6 +101,7 @@ header {
 
 #selection {
     display: grid;
+    padding: 0;
     max-width: 500px;
     margin: 30px auto;
     grid-template-columns: 1fr 1fr;
@@ -135,7 +136,7 @@ header {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    margin: 30px 10px;
+    margin: 30px auto;
 }
 
 #selected .heading {
@@ -187,9 +188,9 @@ header {
 
 #rules {
     position: absolute;
-    top: 20px;
-    left: calc(50% - 230px);
-    padding: 80px 80px 30px 80px;
+    top: 70px;
+    left: calc(50% - 184px);
+    padding: 80px 30px 20px 30px;
     background-color: whitesmoke;
     border: 2px solid var(--header-outline);
 }
@@ -204,7 +205,7 @@ header {
     color: var(--dark-text);
     position: relative;
     top: -340px;
-    left: 330px;
+    left: 285px;
     width: 35px;
 }
 
@@ -216,7 +217,45 @@ header {
     display: none !important;
 }
 
-
-
 .attribution { clear: both; margin-bottom: 30px; font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width:650px) {
+    body {
+        max-width: 90%;
+    }
+
+    .border{
+        width: 120px;
+        height: 120px;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    .icon {
+        padding: 20px;
+    }
+
+    #againBtn {
+        padding: 7px 5px;
+    }
+
+    #winLose {
+        font-size: 18px;
+        margin-top: 80px;
+    }
+    #selected .heading {
+        font-size: 25px;
+        width: 120px;
+    }
+
+    #rules {
+        padding: 80px 20px 20px 20px;
+        left: calc(50% - 174px);
+    }
+
+    #selection {
+        background-size: 200px;
+    }
+    
+}
