@@ -9,7 +9,9 @@ for (let btn of btns) {
             img = e.target.childNodes[0].src;
         }
         let classes = e.target.classList;
-        document.getElementById("closeBtn").click();
+        if (window.getComputedStyle(document.getElementById("rules")).display != 'none') {
+            document.getElementById("closeBtn").click();    
+        }
         document.getElementById("selection").classList.add("hide");
         document.getElementById("selected").classList.remove("hide");
         let player = document.getElementById("player")
@@ -62,6 +64,7 @@ for (let btn of btns) {
 
 // Reset game
 document.getElementById("againBtn").addEventListener("click", (e) => {
+    e.preventDefault();
     document.getElementById("win").classList.add("hide");
     document.getElementById("lose").classList.add("hide");
     document.getElementById("draw").classList.add("hide");
