@@ -174,16 +174,25 @@ header {
 
 #againBtn {
     background-color: white;
-    color: hsl(349, 71%, 52%);
+    color: var(--dark-text);
+}
+
+#againBtn:hover {
+    color: hsl(349, 81%, 54%);
 }
 
 #rulesBtn {
     display: block;
-    float: right;
+    position: absolute;
     background-color: transparent;
     color: white;
-    margin-bottom: 50px;
-    margin-top: 20px;
+    bottom: 10%;
+    right: 10%;
+}
+
+#rulesBtn:hover {
+    background-color: white;
+    color: var(--dark-text);
 }
 
 #rules {
@@ -217,7 +226,14 @@ header {
     display: none !important;
 }
 
-.attribution { clear: both; margin-bottom: 30px; font-size: 11px; text-align: center; }
+.attribution {
+    display: block;
+    font-size: 11px; 
+    text-align: center; 
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
 .attribution a { color: hsl(228, 45%, 44%); }
 
 @media screen and (max-width:600px) {
