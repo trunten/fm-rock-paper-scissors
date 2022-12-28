@@ -220,7 +220,7 @@ header {
 .attribution { clear: both; margin-bottom: 30px; font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:600px) {
     body {
         max-width: 90%;
     }
@@ -244,6 +244,11 @@ header {
         font-size: 18px;
         margin-top: 80px;
     }
+
+    #selected {
+        gap: 10px;
+    }
+
     #selected .heading {
         font-size: 25px;
         width: 120px;
@@ -255,7 +260,7 @@ header {
     }
 
     #selection {
-        background-size: 200px;
+        background-size: 40%;
     }
     
 }
