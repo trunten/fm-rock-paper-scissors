@@ -44,6 +44,7 @@ body {
     height: 180px;
     width: 180px;
     cursor: pointer;
+    box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.75);
 }
 
 .icon {
@@ -52,6 +53,7 @@ body {
     background-color: white;
     padding: 30px;
     border-radius: 100%;
+    box-shadow: inset 10px 5px 30px -10px rgba(0,0,0,0.75);
 }
 
 .border.rock {
