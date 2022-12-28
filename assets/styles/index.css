@@ -37,10 +37,6 @@ body {
     margin: 0 auto;
 }
 
-.hide {
-    display: none !important;
-}
-
 .border {
     display: block;
     border-radius: 100%;
@@ -214,6 +210,10 @@ header {
 
 #rules:target {
     display: block !important;
+}
+
+.hide {
+    display: none !important;
 }
 
 
