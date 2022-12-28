@@ -1,5 +1,7 @@
 # Frontend Mentor - Rock, Paper, Scissors
 
+[Deployed app](https://trunten.github.io/fm-rock-paper-scissors/)
+
 ![Design preview for the Rock, Paper, Scissors coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
