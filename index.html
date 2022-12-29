@@ -19,13 +19,18 @@
   </header>
   
   <main>
-    <div id="selection">
+    <h1 id="heading" class="h1 heading invisible">Player 1: Pick Your Weapon</h1>
+    <div id="mode">
+      <button mode="1">One Player</button>
+      <button mode="2">Two Player</button>
+    </div>
+    <div id="selection" class="hide">
       <span class="border rock"><img src="./assets/images/icon-rock.svg" class="icon rock" alt="Rock"></span>
       <span class="border paper"><img src="./assets/images/icon-paper.svg" class="icon paper" alt="Paper"></span>
       <span class="border scissors"><img src="./assets/images/icon-scissors.svg" class="icon scissors" alt="Scissors"></span>
     </div>
     <div id="selected" class="hide">
-      <div>
+      <div id="playerChoice">
         <span class="heading">You Picked</span>
         <span id="player" class="border paper">
           <img src="./assets/images/icon-paper.svg" class="icon" alt="Player Choice">
@@ -34,17 +39,22 @@
       <div id="winLose">
         <div id="win" class="hide">You Win</div>
         <div id="lose" class="hide">You Lose</div>
+        <div id="p1" class="hide">Player 1 Wins</div>
+        <div id="p2" class="hide">Player 2 Wins</div>
         <div id="draw" class="hide">Draw</div>
         <button id="againBtn">Play Again</button>
       </div>
-      <div>
+      <div id="houseChoice">
         <span class="heading">House Picked</span>
         <span id="house" class="border scissors">
           <img src="./assets/images/icon-scissors.svg" class="icon" alt="House choice">
         </span>
       </div>
     </div>
-    <a href="#rules" id="rulesBtn">Rules</a>
+    <nav>
+        <button id="fullReset">Change Mode</button>
+        <a href="#rules" id="rulesBtn">Rules</a>
+    </nav>
     <div id="rules" class="hide">
       <img src="./assets/images/image-rules.svg" alt="rules">
       <a href="#" id="closeBtn">X</a>
