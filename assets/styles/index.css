@@ -281,16 +281,6 @@ nav {
     visibility: hidden;
 }
 
-.attribution {
-    display: inline-block;
-    font-size: 11px; 
-    text-align: center; 
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-}
-.attribution a { color: hsl(228, 45%, 44%); }
-
 @media screen and (max-width:520px) {
 
     .border{
@@ -315,6 +305,7 @@ nav {
 
     nav {
         right: calc(calc(100vw / 2) - 157px);
+        bottom: 15px;
     }
 
     .heading.h1 {
