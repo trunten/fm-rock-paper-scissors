@@ -43,7 +43,7 @@ body {
     font-weight: 400;
     display: block;
     letter-spacing: 1px;
-    margin: -5px auto;
+    margin: 0 auto;
     text-align: center;
     /* visibility: hidden; */
     text-transform: uppercase;
@@ -116,7 +116,7 @@ header {
 }
 
 #mode {
-    margin: 20px auto;
+    margin: 50px auto;
 }
 
 #mode button {
@@ -184,7 +184,7 @@ header {
 }
 
 #winLose {
-    margin-top: 60px;
+    /* margin-top: 60px; */
     font-size: 40px;
     font-weight: 600;
     text-transform: uppercase;
@@ -277,10 +277,6 @@ nav {
     display: none !important;
 }
 
-.invisible {
-    visibility: hidden;
-}
-
 @media screen and (max-width:520px) {
 
     .border{
@@ -309,7 +305,7 @@ nav {
     }
 
     .heading.h1 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     #playerChoice {
@@ -326,7 +322,7 @@ nav {
 
     #selected {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 180px;
         grid-template-areas: 
             "player house"
             "outcome outcome";

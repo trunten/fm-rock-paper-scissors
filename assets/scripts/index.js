@@ -48,7 +48,7 @@ for (let btn of btns) {
         }
 
         //Hide selection
-        document.getElementById("heading").classList.add("invisible");
+        document.getElementById("heading").classList.add("hide");
         document.getElementById("selection").classList.add("hide");
         document.getElementById("selected").classList.remove("hide");
 
@@ -132,14 +132,15 @@ function reset(e) {
     document.getElementById("draw").classList.add("hide");
     document.getElementById("selected").classList.add("hide");
     document.getElementById("selection").classList.remove("hide");
-    document.getElementById("heading").classList.remove("invisible");
+    document.getElementById("heading").classList.remove("hide");
+    document.getElementById("heading").innerText = (mode == 1 ? "Pick Your Weapon" : "Player 1: Pick Your Weapon");
     turn = 1;
 }
 
 function fullReset(e) {
     reset(e);
     document.getElementById("selection").classList.add("hide");
-    document.getElementById("heading").classList.add("invisible");
+    document.getElementById("heading").classList.add("hide");
     document.getElementById("mode").classList.remove("hide");
     mode = "";
 }
