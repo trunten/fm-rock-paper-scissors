@@ -35,8 +35,8 @@ for (let btn of btns) {
                 player.classList.add("border");
                 player.childNodes[1].src=img;
                 turn = 2;
-                document.getElementById("heading").innerText = "Player 2: Pick Your Weapon";
-                alert("Pass to player 2");
+                document.getElementById("heading").innerText = "Player Two";
+                alert("Pass to Player TWO");
                 return;
             } else {
                 house.classList = classes;
@@ -109,7 +109,7 @@ function setGameMode(e) {
         players[0].innerText = "You Picked"
         players[1].innerText = "House Picked"
     } else {
-        head.innerText = "Player 1: Pick Your Weapon";
+        head.innerText = "Player One";
         players[0].innerText = "Player 1 Picked"
         players[1].innerText = "Player 2 Picked"
         // document.getElementById("score").children[0].innerText = "Two Player"
@@ -133,7 +133,7 @@ function reset(e) {
     document.getElementById("selected").classList.add("hide");
     document.getElementById("selection").classList.remove("hide");
     document.getElementById("heading").classList.remove("hide");
-    document.getElementById("heading").innerText = (mode == 1 ? "Pick Your Weapon" : "Player 1: Pick Your Weapon");
+    document.getElementById("heading").innerText = (mode == 1 ? "Pick Your Weapon" : "Player One");
     turn = 1;
 }
 
