@@ -162,4 +162,5 @@ function fullReset(e) {
     document.getElementById("fullReset").classList.add("invisible");
     mode = "";
     score = 0;
+    document.getElementById("playerScore").innerText = "#"
 }
