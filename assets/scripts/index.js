@@ -108,6 +108,7 @@ function setGameMode(e) {
         head.innerText = "Pick Your Weapon";
         players[0].innerText = "You Picked"
         players[1].innerText = "House Picked"
+        document.getElementById("playerScore").innerText = score;
     } else {
         head.innerText = "Player One";
         players[0].innerText = "Player 1 Picked"
@@ -133,8 +134,12 @@ function reset(e) {
     document.getElementById("selected").classList.add("hide");
     document.getElementById("selection").classList.remove("hide");
     document.getElementById("heading").classList.remove("hide");
+    document.getElementById("fullReset").classList.remove("invisible");
     document.getElementById("heading").innerText = (mode == 1 ? "Pick Your Weapon" : "Player One");
     turn = 1;
+    if (window.getComputedStyle(document.getElementById("rules")).display != 'none') {
+        document.getElementById("closeBtn").click();    
+    }
 }
 
 function fullReset(e) {
@@ -142,5 +147,7 @@ function fullReset(e) {
     document.getElementById("selection").classList.add("hide");
     document.getElementById("heading").classList.add("hide");
     document.getElementById("mode").classList.remove("hide");
+    document.getElementById("fullReset").classList.add("invisible");
     mode = "";
+    score = 0;
 }
