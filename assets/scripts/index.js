@@ -120,6 +120,18 @@ function setGameMode(e) {
     e.target.parentNode.classList.add("hide");
 }
 
+//Rules modal
+document.getElementById("rulesBtn").addEventListener("click", (e) => {
+    e.preventDefault();
+    document.getElementById("rules").classList.remove("hide");
+});
+
+document.getElementById("closeBtn").addEventListener("click", (e) => {
+    e.preventDefault();
+    document.getElementById("rules").classList.add("hide");
+});
+
+
 // Reset game
 document.getElementById("againBtn").addEventListener("click", reset);
 document.getElementById("fullReset").addEventListener("click", fullReset);

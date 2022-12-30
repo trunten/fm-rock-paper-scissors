@@ -242,7 +242,7 @@ header {
     border: 1px solid var(--header-outline);
 }
 
-#rules a {
+#rules span {
     display: block;
     text-align: center;
     text-decoration: none;
@@ -253,9 +253,10 @@ header {
     position: relative;
     top: -340px;
     left: 150px;
+    cursor: pointer;
 }
 
-#rules a:hover {
+#rules span:hover {
     color: var(--red-text);
 }
 
@@ -267,10 +268,6 @@ nav {
     position: absolute;
     bottom: 50px;
     right: 40px;
-}
-
-#rules:target {
-    display: block !important;
 }
 
 .hide {
@@ -334,7 +331,7 @@ nav {
     
 }
 
-@media screen and (max-height:680px) {
+@media screen and (max-width:520px) and (max-height:750px) {
     #rulesBtn {
         visibility: hidden;
     }
