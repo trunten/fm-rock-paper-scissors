@@ -333,3 +333,52 @@ nav {
     }
     
 }
+
+@media screen and (max-height:680px) {
+    #rulesBtn {
+        visibility: hidden;
+    }
+
+    #rulesBtn::after {
+        content: "?";
+        visibility: visible;
+        color: white;
+        padding: 11px 15px 11px 17px;
+        position: absolute;
+        bottom: 2px;
+        right: 5px;
+        text-align: center;
+        border: 1px solid white;
+        border-radius: 100%;
+        /* display: block; */
+    }
+
+    #rulesBtn:hover::after {
+        background-color: white;
+        color: var(--red-text);
+    }
+
+    #fullReset {
+        visibility: hidden;
+    }
+
+    #fullReset::after {
+        content: "➥";
+        transform: rotateY(180deg);
+        visibility: visible;
+        color: white;
+        padding: 11px 10px 11px 14px;
+        position: absolute;
+        bottom: 2px;
+        left: 5px;
+        text-align: center;
+        border: 1px solid white;
+        border-radius: 100%;
+        /* display: block; */
+    }
+
+    #fullReset:hover::after {
+        background-color: white;
+        color: var(--red-text);
+    }
+}
