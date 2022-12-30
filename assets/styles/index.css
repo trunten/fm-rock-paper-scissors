@@ -264,10 +264,11 @@ nav {
     display: grid;
     column-gap: 15px;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    justify-content: space-between;
+    width: 100vw;
     position: absolute;
     bottom: 50px;
-    right: 40px;
+    left: 0;
 }
 
 .hide {
@@ -301,7 +302,7 @@ nav {
     }
 
     nav {
-        right: calc(calc(100vw / 2) - 157px);
+        /* right: calc(calc(100vw / 2) - 157px); */
         bottom: 15px;
     }
 
@@ -331,7 +332,7 @@ nav {
     
 }
 
-@media screen and (max-width:520px) and (max-height:750px) {
+@media screen and (max-width:620px) and (max-height:750px) {
     #rulesBtn {
         visibility: hidden;
     }
@@ -343,7 +344,7 @@ nav {
         padding: 11px 15px 11px 17px;
         position: absolute;
         bottom: 2px;
-        right: 5px;
+        right: 15px;
         text-align: center;
         border: 1px solid white;
         border-radius: 100%;
@@ -367,7 +368,7 @@ nav {
         padding: 11px 10px 11px 14px;
         position: absolute;
         bottom: 2px;
-        left: 5px;
+        left: 15px;
         text-align: center;
         border: 1px solid white;
         border-radius: 100%;
