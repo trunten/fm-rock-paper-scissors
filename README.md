@@ -1,4 +1,4 @@
-# Frontend Mentor - Rock, Paper, Scissors
+# Rock, Paper, Scissors
 
 [Deployed app](https://trunten.github.io/fm-rock-paper-scissors/)
 
