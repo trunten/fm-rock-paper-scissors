@@ -264,7 +264,6 @@ nav {
     display: grid;
     column-gap: 15px;
     grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
     width: 100vw;
     position: absolute;
     bottom: 50px;
@@ -277,6 +276,10 @@ nav {
 
 .invisible {
     visibility: hidden;
+}
+
+.mobile {
+    display: none;
 }
 
 @media screen and (max-width:520px) {
@@ -302,7 +305,6 @@ nav {
     }
 
     nav {
-        /* right: calc(calc(100vw / 2) - 157px); */
         bottom: 15px;
     }
 
@@ -333,50 +335,24 @@ nav {
 }
 
 @media screen and (max-width:620px) and (max-height:750px) {
-    #rulesBtn {
-        visibility: hidden;
+    .desktop {
+        display: none;
     }
 
-    #rulesBtn::after {
-        content: "?";
-        visibility: visible;
-        color: white;
-        padding: 11px 15px 11px 17px;
-        position: absolute;
-        bottom: 2px;
-        right: 15px;
-        text-align: center;
-        border: 1px solid white;
+    .mobile {
+        display: inline-block;
+    }
+
+    #rulesBtn, #fullReset {
+        width: 45px;
+        height: 45px;
+        padding: 10px 10px 10px 12px;
         border-radius: 100%;
-        /* display: block; */
+        font-size: 18px;
     }
 
-    #rulesBtn:hover::after {
-        background-color: white;
-        color: var(--red-text);
-    }
-
-    #fullReset {
-        visibility: hidden;
-    }
-
-    #fullReset::after {
-        content: "➥";
-        transform: rotateY(180deg);
-        visibility: visible;
-        color: white;
-        padding: 11px 10px 11px 14px;
-        position: absolute;
-        bottom: 2px;
-        left: 15px;
-        text-align: center;
-        border: 1px solid white;
-        border-radius: 100%;
-        /* display: block; */
-    }
-
-    #fullReset:hover::after {
-        background-color: white;
-        color: var(--red-text);
+    nav {
+        grid-template-columns: 70px 70px;
+        justify-content: space-between;
     }
 }
