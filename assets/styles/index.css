@@ -80,6 +80,15 @@ body {
     background: var(--scissors-gradient);
 }
 
+#selection .border {
+    transition: all 0.3s ease-in-out;
+}
+
+#selection .border:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
 header {
     display: flex;
     justify-content: space-between;

@@ -2,8 +2,6 @@ let score = 0;
 let mode = "";
 let turn = 1;
 
-console.log(document.querySelectorAll("#selected .heading"));
-
 let btns = document.getElementById("selection").getElementsByTagName("span");
 for (let btn of btns) {
     btn.addEventListener("click", (e) => {
