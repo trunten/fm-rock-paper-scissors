@@ -56,36 +56,16 @@ for (let btn of btns) {
         let outcome = ""
         if (player == house) {
             outcome = "draw";
-        } else if (player == "rock") {
-            if (house == "paper") {
-                //lose
-                outcome = mode == 2 ? "p2" : "lose";
-                score--;
-            } else {
-                //win
-                outcome = mode == 2 ? "p1" : "win";
-                score++;
-            }
-        } else if (player == "paper") {
-            if (house == "scissors") {
-                //lose
-                outcome = mode == 2 ? "p2" : "lose";
-                score--;
-            } else {
-                //win
-                outcome = mode == 2 ? "p1" : "win";
-                score++;
-            }
-        } else if (player == "scissors") {
-            if (house == "rock") {
-                //lose
-                outcome = mode == 2 ? "p2" : "lose";
-                score--;
-            } else {
-                //win
-                outcome = mode == 2 ? "p1" : "win";
-                score++;
-            }
+        } else if ((player == "rock" && house === "scissors") 
+                || (player == "paper" && house === "rock")
+                || (player == "scissors" && house === "paper")) {
+            //win
+            outcome = mode == 2 ? "p1" : "win";
+            score++;
+        } else {
+            //lose
+            outcome = mode == 2 ? "p2" : "lose";
+            score--;
         }
         document.getElementById(outcome).classList.remove("hide");
         if (mode == 1) { document.getElementById("playerScore").innerText = score; }
