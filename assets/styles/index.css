@@ -355,7 +355,7 @@ nav {
         display: inline-block;
     }
 
-    #rulesBtn, #fullReset {
+    #rulesBtn, #modeSelectBtn {
         width: 45px;
         height: 45px;
         padding: 10px 10px 10px 12px;
