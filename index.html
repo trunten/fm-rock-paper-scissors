@@ -26,9 +26,9 @@
       <button mode="2">Two Player</button>
     </div>
     <div id="selection" class="hide">
-      <span class="border rock"><img src="./assets/images/icon-rock.svg" class="icon rock" alt="Rock"></span>
-      <span class="border paper"><img src="./assets/images/icon-paper.svg" class="icon paper" alt="Paper"></span>
-      <span class="border scissors"><img src="./assets/images/icon-scissors.svg" class="icon scissors" alt="Scissors"></span>
+      <span class="border rock" type="rock"><img src="./assets/images/icon-rock.svg" class="icon rock" alt="Rock"></span>
+      <span class="border paper" type="paper"><img src="./assets/images/icon-paper.svg" class="icon paper" alt="Paper"></span>
+      <span class="border scissors" type="scissors"><img src="./assets/images/icon-scissors.svg" class="icon scissors" alt="Scissors"></span>
     </div>
     <div id="selected" class="hide">
       <div id="playerChoice">
@@ -38,12 +38,8 @@
         </span>
       </div>
       <div id="winLose">
-        <div id="win" class="hide">You Win</div>
-        <div id="lose" class="hide">You Lose</div>
-        <div id="p1" class="hide">Player 1 Wins</div>
-        <div id="p2" class="hide">Player 2 Wins</div>
-        <div id="draw" class="hide">Draw</div>
-        <button id="againBtn">Play Again</button>
+        <div id="outcome" class="hide">Game Outcome</div>
+        <button id="againBtn" class="hide">Play Again</button>
       </div>
       <div id="houseChoice">
         <span class="heading">House Picked</span>
@@ -53,7 +49,7 @@
       </div>
     </div>
     <nav>
-        <button id="fullReset" class="invisible"><span class="desktop">Change Mode</span><span class="mobile"><i class="fa fa-user" aria-hidden="true"></i></span></button>
+        <button id="modeSelectBtn" class="invisible"><span class="desktop">Change Mode</span><span class="mobile"><i class="fa fa-user" aria-hidden="true"></i></span></button>
         <button id="rulesBtn"><span class="desktop">Rules</span><span class="mobile"><i class="fa fa-question" aria-hidden="true"></i></span></button>
     </nav>
     <div id="rules" class="hide">

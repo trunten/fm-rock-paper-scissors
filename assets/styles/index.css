@@ -80,13 +80,16 @@ body {
     background: var(--scissors-gradient);
 }
 
-#selection .border {
+.border {
     transition: all 0.3s ease-in-out;
 }
 
-#selection .border:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
+/* Only apply hover state on non-touch devices */
+@media (hover: hover) {
+    #selection .border:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+    }
 }
 
 header {
@@ -227,7 +230,7 @@ header {
     background-color: transparent;
 }
 
-#rulesBtn, #fullReset {
+#rulesBtn, #modeSelectBtn {
     display: block;
     background-color: transparent;
     color: white;
@@ -237,7 +240,7 @@ header {
     text-align: center;
 }
 
-#rulesBtn:hover, #fullReset:hover {
+#rulesBtn:hover, #modeSelectBtn:hover {
     background-color: white;
     color: var(--red-text);
 }
